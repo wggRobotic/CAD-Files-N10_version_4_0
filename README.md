@@ -17,15 +17,22 @@ Our robot is a rover featuring a Rocker-Bogie suspension system, inspired by the
 
 The main body of the rover is assembled by combining 3D printed segments with threaded rods (M5). This design choice ensures a stable, robust, yet lightweight and modular framework for the robot. Each segment can be pulled individuell, so the maintenance is much easier.
 
+![Segment_arm](https://github.com/wggRobotic/CAD-Files-N10_version_4_0/blob/main/Segment_Arm.png)
+
+![Segment_raspi](https://github.com/wggRobotic/CAD-Files-N10_version_4_0/blob/main/Segment_Raspi_Motorcontroller_build.png)
+
+![Segment_shield](https://github.com/wggRobotic/CAD-Files-N10_version_4_0/blob/main/Segment_Servoshield.png)
+
+![Segment_differential](https://github.com/wggRobotic/CAD-Files-N10_version_4_0/blob/main/Segment_rechteckig_Middle.png)
+
 Most of the other components are designed for 3D printing and can be assembled using M3, M2.5, or M2 machine screws. For additional stability and support, the servomotors, motor mounts, and wheel hubs are anchored in the plastic using [M3 heat-set inserts](https://www.amazon.de/ruthex-Gewindeeinsatz-St%C3%BCck-Gewindebuchsen-Kunststoffteile/dp/B08BCRZZS3/ref=sr_1_5?crid=17XN2W9D8KS40&dib=eyJ2IjoiMSJ9.chJHNCet5aQ0sdjbprRc9YiyWImaSKCMgxzpF0Odb6mG3Uw6O4oPoJGumEcnij26fxHUnqFu4xEbCiukhTJEgfRtwTroXTYtp6I2u7Oj8ezBf8J0Vm2ra-8HVxpufjoTbuTRTPW0PJ-YRjcHVb0n2xf97lAt-PJU9hZ8-PSX64yPoOslK6qB0rIqrohywO-fdkR2HRTEM7-HABXztPI6a5ZQvwsfHOoXDcItj80shxqz2-HefZcCygZ-Q3RW8Awk-ppkOqzjRlWHilI-Uu6TwTb-dIYF8T5-GOBviLdMch0.EocP6OkBp9Vki3ejz39Wx-2732BW1RPTk52ZiD_WocI&dib_tag=se&keywords=m3%2Bheat%2Binsert&qid=1719955437&s=industrial&sprefix=m3%2Bheat%2Cindustrial%2C75&sr=1-5&th=1).
 
-The motor attachment parts in our old version were one of our main problems. When printed in PETG they would brake in some situtions and had to much flex, so we decided for the new version the redisgn the part and print in out of nylon with an SLS-Printer. This was possible in cooperation with Prof. Dr. Koch from the TH Nürnberg.
+The motor attachment parts in our old version were one of our main problems. When printed in PETG they would brake in some situtions and had to much flex, so we decided for the new version the redisgn the part and print in out of nylon with an SLS-Printer. This was possible in cooperation with [Prof. Dr. Koch](https://www.th-nuernberg.de/person/koch-michael/) from the TH Nürnberg.
 
 All other parts can be printed in PETG.
 
 Enjoy building and customizing your own robot!
 
-![N-10_backview](https://github.com/wggRobotic/CAD-Files-N10/assets/120591442/c757f021-7299-4b9a-96bc-98f256b3cafd)
 
 
 ## Wheel Control and Alignment
@@ -34,7 +41,7 @@ The control and alignment of each wheel are managed by Hobby servomotors of the 
 
 ![Radsteuerung](https://github.com/wggRobotic/CAD-Files-N10/assets/120591442/d4700c3a-2e6c-459a-99f7-2b8c3054262d)
 
-The wheel and motor mounts, as well as the wheel hubs, are specially designed for our purposes and printed from PETG. Due to space constraints, the motor mounts needed to be fabricated from steel to prevent rotation, as a printed part with a thickness of 2mm would not provide the necessary strength.
+The wheel and motor mounts, as well as the wheel hubs, are specially designed for our purposes and printed from PETG. Due to space constraints, the motor mounts needed to be fabricated from steel to prevent rotation, as a printed part with a thickness of 2mm would not provide the necessary strength. For this, we are very grateful to the company [ZF](https://www.zf.com/mobile/de/homepage/homepage.html) in Nuremberg.
 
 ![Halterung](https://github.com/wggRobotic/CAD-Files-N10/assets/120591442/f9dd840f-60f2-4c2c-aabc-091eb7804936)
 
