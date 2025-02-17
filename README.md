@@ -29,6 +29,8 @@ Most of the other components are designed for 3D printing and can be assembled u
 
 The motor attachment parts in our old version were one of our main problems. When printed in PETG they would brake in some situtions and had to much flex, so we decided for the new version the redisgn the part and print in out of nylon with an SLS-Printer. This was possible in cooperation with [Prof. Dr. Koch](https://www.th-nuernberg.de/person/koch-michael/) from the TH Nürnberg.
 
+![Motorhalterung](https://github.com/wggRobotic/CAD-Files-N10_version_4_0/blob/main/Motorhalterung.png)
+
 All other parts can be printed in PETG.
 
 Enjoy building and customizing your own robot!
@@ -39,14 +41,17 @@ Enjoy building and customizing your own robot!
 
 The control and alignment of each wheel are managed by Hobby servomotors of the type MG996 [amazon link](https://www.amazon.de/AZDelivery-Digital-Getriebe-Hubchrauber-Flugzeug/dp/B07H89JH74/ref=sr_1_2?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=20UB04WN0BON9&dib=eyJ2IjoiMSJ9.jMjuySQHT6p8VIY-ZIwi8eP9WQJ9V1MrcKxaDV1JJg4PRRWaKzoqgBB9yN_9xgObVnsSbaOOko2qLZnxiPspi8gaGecjEiFInNaGroJ06pNMcJr5EKOoNp8pfKIAUZGuqwX5CWbhRgeHcCt37xzNel7SX5nhwR0ZShuztfvetHMurphIKWJllOyqCvQf4yk7g2I_1_g6FaLOq8EPZrDAzRy_pexkP4v7pn-SU7T0fBnbm6birAZ4GndJXkDXJ2S_mEUkR-qhmcHrf41Jt7gBGO1_OqcaoRwtFx7SWKjT7cI.OOeIdcPjQSuF0THw2KD0bblc1hnfhNPcDn3p2AsPUf0&dib_tag=se&keywords=MG996&qid=1719952179&sprefix=mg996%2Caps%2C144&sr=8-2&th=1). These servomotors are addressed via I2C through an Adafruit PCA9685 servo board.
 
-![Radsteuerung](https://github.com/wggRobotic/CAD-Files-N10/assets/120591442/d4700c3a-2e6c-459a-99f7-2b8c3054262d)
+
+![Rocker-Bogie-Suspension](https://github.com/wggRobotic/CAD-Files-N10_version_4_0/blob/main/Rocker_Bogie_build.png)
+
+![Rocker](https://github.com/wggRobotic/CAD-Files-N10_version_4_0/blob/main/Front_arm_build.png)
+
+![Back-arm](https://github.com/wggRobotic/CAD-Files-N10_version_4_0/blob/main/Back_arm_build.png)
+
 
 The wheel and motor mounts, as well as the wheel hubs, are specially designed for our purposes and printed with an SLS-printer in Nylon. Due to space constraints, the motor mounts needed to be fabricated from steel to prevent rotation, as a printed part with a thickness of 2mm would not provide the necessary strength. For this, we are very grateful to the company [ZF](https://www.zf.com/mobile/de/homepage/homepage.html) in Nuremberg.
 
-![Halterung](https://github.com/wggRobotic/CAD-Files-N10/assets/120591442/f9dd840f-60f2-4c2c-aabc-091eb7804936)
-
-![Radaufnahme](https://github.com/wggRobotic/CAD-Files-N10/assets/120591442/e1395c14-dbce-42e0-9259-59804debf6c9)
-
+![Halterung](https://github.com/wggRobotic/CAD-Files-N10_version_4_0/blob/main/Motorhalterung_mit_Motor.png))
 
 
 ## Motors and motorcontrol
@@ -65,6 +70,8 @@ Warning: The Raspberry single-board computer is supplied directly via the socket
 ![Free_Kinematics_Kit_1920](https://github.com/wggRobotic/CAD-Files-N10/assets/120591442/0ba67526-036f-4526-a45c-32b8420f3916)
 
 ![Free_Kinematics_Kit_Electrical_Interface_Desc_1920](https://github.com/wggRobotic/CAD-Files-N10/assets/120591442/a908d785-35f4-4d51-8ecc-d744f49c71be)
+
+We also use an extra modul for distributing the Motortreiber-Board out to the rocker-elements.
 
 ## Power Supply
 
@@ -85,39 +92,42 @@ In our GUI, users can switch between the different camera feeds with the press o
 
 This section provides a brief description of the simple robot arm mounted on the N10 robot. 
 
-![Arm_topview](https://github.com/wggRobotic/CAD-Files-N10/assets/120591442/d316788a-5b93-4feb-8acc-bedf19230b7c)
+![Arm_topview](https://github.com/wggRobotic/CAD-Files-N10_version_4_0/blob/main/Greifarm%20v6.png)
 
 The main components include:
 
-+ Three powerful [Servomotors](https://www.amazon.de/ANNIMOS-Servomotor-Drehmoment-Vollmetallgetriebe-Montagehalterungen/dp/B0C69NNP9P/ref=sr_1_3_sspa?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=UCIEWCEVMBRO&dib=eyJ2IjoiMSJ9.eTzcKcyFLjDNHDpnPQZJRfFhKbAR_WBfuoLJeXxlH6KBujWXHRrs_x90tFlDvEu367pgTSnAFVVGcFjP9yLmQUbCXhf3vvwoP0qKpWB9hCGZbYcZBGu33ggxs5dtio-8DiRSc_nJy1WuIdFL93Eo1WjrbN1Ju_cae9FhVhUSpF7Wco-Wh4DlLKj_jMu_KlCgu9w2U5_rPTc_Jl4Hmu8ZmZezD00Ck7NDL44A_NYS0yS2ToD6ZyOGd-OXaLEs4ESttlNLcq0g_ZLHrUHcIDhI1RwBdlwq0DrzhIh03Zq-7p0.Mx7QMXx5J2M_lZuvLIVTyTHeCN6Ae1HbLnZYiZIw5Jo&dib_tag=se&sprefix=servo%2Caps%2C106&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY) with aluminum brackets: These form the basic structure of the arm. 
++ Three powerful [Servomotors](https://www.amazon.de/ANNIMOS-Servomotor-Drehmoment-Vollmetallgetriebe-Montagehalterungen/dp/B0C69NNP9P/ref=sr_1_3_sspa?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=UCIEWCEVMBRO&dib=eyJ2IjoiMSJ9.eTzcKcyFLjDNHDpnPQZJRfFhKbAR_WBfuoLJeXxlH6KBujWXHRrs_x90tFlDvEu367pgTSnAFVVGcFjP9yLmQUbCXhf3vvwoP0qKpWB9hCGZbYcZBGu33ggxs5dtio-8DiRSc_nJy1WuIdFL93Eo1WjrbN1Ju_cae9FhVhUSpF7Wco-Wh4DlLKj_jMu_KlCgu9w2U5_rPTc_Jl4Hmu8ZmZezD00Ck7NDL44A_NYS0yS2ToD6ZyOGd-OXaLEs4ESttlNLcq0g_ZLHrUHcIDhI1RwBdlwq0DrzhIh03Zq-7p0.Mx7QMXx5J2M_lZuvLIVTyTHeCN6Ae1HbLnZYiZIw5Jo&dib_tag=se&sprefix=servo%2Caps%2C106&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY) with aluminum brackets: These form the basic structure of the arm.
+  
++ USB Camera modules [IMX179](https://www.berrybase.de/usb-2.0-hd-kameramodul-8-megapixel-imx179-sensor-1450-mikrofon) and [OV2710](https://www.berrybase.de/usb-2.0-kameramodul-2-megapixel-ov2710-sensor-1450-low-light?number=USBCAM-OV2&utm_source=google&utm_medium=cpc&gad_source=1&gclid=CjwKCAjwyo60BhBiEiwAHmVLJcHQucbtdbESN0yuI6bVZ5HOoqdbWIbmEjVRBcczMSEdCzt6vbW_oBoCiiIQAvD_BwE)
+  
++ Laser distance sensor, build into the gripper: [VL53L0X](https://www.amazon.de/AZDelivery-VL53L0X-Flight-Ranging-Sensor/dp/B086V37JJ7?th=1)
   
 + Gripper: A simple gripper controlled by a Hobby servomotors of the type [MG996](https://www.amazon.de/AZDelivery-Digital-Getriebe-Hubchrauber-Flugzeug/dp/B07H89JH74/ref=sr_1_2?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=20UB04WN0BON9&dib=eyJ2IjoiMSJ9.jMjuySQHT6p8VIY-ZIwi8eP9WQJ9V1MrcKxaDV1JJg4PRRWaKzoqgBB9yN_9xgObVnsSbaOOko2qLZnxiPspi8gaGecjEiFInNaGroJ06pNMcJr5EKOoNp8pfKIAUZGuqwX5CWbhRgeHcCt37xzNel7SX5nhwR0ZShuztfvetHMurphIKWJllOyqCvQf4yk7g2I_1_g6FaLOq8EPZrDAzRy_pexkP4v7pn-SU7T0fBnbm6birAZ4GndJXkDXJ2S_mEUkR-qhmcHrf41Jt7gBGO1_OqcaoRwtFx7SWKjT7cI.OOeIdcPjQSuF0THw2KD0bblc1hnfhNPcDn3p2AsPUf0&dib_tag=se&keywords=MG996&qid=1719952179&sprefix=mg996%2Caps%2C144&sr=8-2&th=1).
   
 + Control: The arm is controlled via I2C using an [Adafruit PCA9685 servo board](https://www.amazon.de/PCA9685-16-Kanal-12-Bit-Arduino-Robort/dp/B07Y9PTY12/ref=sr_1_1_sspa?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1H58JK0GL9NFW&dib=eyJ2IjoiMSJ9.sjVEWI4eKRct-eZBQe_falPylAAwfhP8vZm8uHwHw66MRq0ATak9f7IIULp36zjukcF5EAij4hVMcSNmdBgMud2f-AMP_C3jbILbSyO9KD9OGyWViLzLGNoxXIqxymJ1gFsvUm8Q7Ir2M-0g2c2kmnue8tN2o81HSOSYR3C1--mLdxFhAHc_zcR0KkqPxyjhoQd1BjaoIHVv59fo3a8INueA9dn1atLidDkxX4F7HrQ.-r1tciRJ8uMP2lGuUtUHNLkgY6wIfp8SJxpd5GLO-9s&dib_tag=se&keywords=PCA9685&qid=1719951819&sprefix=pca9685%2Caps%2C81&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1).
   
-+ 3D printed 
++ 3D printed segements between the servos.
 
 
 ## Component-list
 
 Component | Unit price | Quantity | Total price | Note
 -------- | :--------: | :--------: | :--------: | --------
-MG996 - Servomotor   | 6.00 €   | 6 | 36.00 €   | [Amazon](https://www.amazon.de/AZDelivery-Digital-Getriebe-Hubchrauber-Flugzeug/dp/B07H89JH74/ref=sr_1_2?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=20UB04WN0BON9&dib=eyJ2IjoiMSJ9.jMjuySQHT6p8VIY-ZIwi8eP9WQJ9V1MrcKxaDV1JJg4PRRWaKzoqgBB9yN_9xgObVnsSbaOOko2qLZnxiPspi8gaGecjEiFInNaGroJ06pNMcJr5EKOoNp8pfKIAUZGuqwX5CWbhRgeHcCt37xzNel7SX5nhwR0ZShuztfvetHMurphIKWJllOyqCvQf4yk7g2I_1_g6FaLOq8EPZrDAzRy_pexkP4v7pn-SU7T0fBnbm6birAZ4GndJXkDXJ2S_mEUkR-qhmcHrf41Jt7gBGO1_OqcaoRwtFx7SWKjT7cI.OOeIdcPjQSuF0THw2KD0bblc1hnfhNPcDn3p2AsPUf0&dib_tag=se&keywords=MG996&qid=1719952179&sprefix=mg996%2Caps%2C144&sr=8-2&th=1)
-ANNIMOS 25kg Servomotor   | 29.98 €   | 2 | 59.96 €   | [Amazon](https://www.amazon.de/ANNIMOS-Servomotor-Drehmoment-Vollmetallgetriebe-Montagehalterungen/dp/B0C69NNP9P/ref=sr_1_3_sspa?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=UCIEWCEVMBRO&dib=eyJ2IjoiMSJ9.eTzcKcyFLjDNHDpnPQZJRfFhKbAR_WBfuoLJeXxlH6KBujWXHRrs_x90tFlDvEu367pgTSnAFVVGcFjP9yLmQUbCXhf3vvwoP0qKpWB9hCGZbYcZBGu33ggxs5dtio-8DiRSc_nJy1WuIdFL93Eo1WjrbN1Ju_cae9FhVhUSpF7Wco-Wh4DlLKj_jMu_KlCgu9w2U5_rPTc_Jl4Hmu8ZmZezD00Ck7NDL44A_NYS0yS2ToD6ZyOGd-OXaLEs4ESttlNLcq0g_ZLHrUHcIDhI1RwBdlwq0DrzhIh03Zq-7p0.Mx7QMXx5J2M_lZuvLIVTyTHeCN6Ae1HbLnZYiZIw5Jo&dib_tag=se&sprefix=servo%2Caps%2C106&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)
-9g Micro Servomotor  | 2.00 €   | 1 | 2.00 €   | [Amazon](https://www.amazon.de/Miuzei-Hubschrauber-Helikopter-Fahrzeugmodelle-Steuerung/dp/B07KPS9845/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.lygpGv5pFROZz7M3BpIC1HiLKXb8VI47frXlfyK9FP0EpUpopKclBeyTEdA92TkooSRaof66bFbMhb9mVahZZQwGlvJTlpNccGZH2MtS3z76oD2dpTvudjy5K5gDB2Wr7MlMHtJaimLiWz-Rv4tI9Z06j2mWLTuhrNQy7_LjsbTf-dPUs_04aYF955WEfz6kUMepedn4It269E7F6XvArZnCpvwsF8BRg7haZXndgPfpS1oXfU-hz-jI7td05NRu4gE7FMrwZqM0f-AkCuE04ffQQyT7XRBZYd0V2rG-hEk.TqNgT7w-e1UQIRFZTIPoaH47vqUAJO5tFQxCZdYmF_E&dib_tag=se&keywords=9g%2Bservo&qid=1719951774&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)
+MG996 - Servomotor   | 6.00 €   | 7 | 42.00 €   | [Amazon](https://www.amazon.de/AZDelivery-Digital-Getriebe-Hubchrauber-Flugzeug/dp/B07H89JH74/ref=sr_1_2?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=20UB04WN0BON9&dib=eyJ2IjoiMSJ9.jMjuySQHT6p8VIY-ZIwi8eP9WQJ9V1MrcKxaDV1JJg4PRRWaKzoqgBB9yN_9xgObVnsSbaOOko2qLZnxiPspi8gaGecjEiFInNaGroJ06pNMcJr5EKOoNp8pfKIAUZGuqwX5CWbhRgeHcCt37xzNel7SX5nhwR0ZShuztfvetHMurphIKWJllOyqCvQf4yk7g2I_1_g6FaLOq8EPZrDAzRy_pexkP4v7pn-SU7T0fBnbm6birAZ4GndJXkDXJ2S_mEUkR-qhmcHrf41Jt7gBGO1_OqcaoRwtFx7SWKjT7cI.OOeIdcPjQSuF0THw2KD0bblc1hnfhNPcDn3p2AsPUf0&dib_tag=se&keywords=MG996&qid=1719952179&sprefix=mg996%2Caps%2C144&sr=8-2&th=1)
+ANNIMOS 25kg Servomotor   | 21.9 €   | 3 | 65,97 €   | [Amazon](https://www.amazon.de/ANNIMOS-Servomotor-Drehmoment-Vollmetallgetriebe-Montagehalterungen/dp/B0C69NNP9P/ref=sr_1_3_sspa?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=UCIEWCEVMBRO&dib=eyJ2IjoiMSJ9.eTzcKcyFLjDNHDpnPQZJRfFhKbAR_WBfuoLJeXxlH6KBujWXHRrs_x90tFlDvEu367pgTSnAFVVGcFjP9yLmQUbCXhf3vvwoP0qKpWB9hCGZbYcZBGu33ggxs5dtio-8DiRSc_nJy1WuIdFL93Eo1WjrbN1Ju_cae9FhVhUSpF7Wco-Wh4DlLKj_jMu_KlCgu9w2U5_rPTc_Jl4Hmu8ZmZezD00Ck7NDL44A_NYS0yS2ToD6ZyOGd-OXaLEs4ESttlNLcq0g_ZLHrUHcIDhI1RwBdlwq0DrzhIh03Zq-7p0.Mx7QMXx5J2M_lZuvLIVTyTHeCN6Ae1HbLnZYiZIw5Jo&dib_tag=se&sprefix=servo%2Caps%2C106&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)
 EduArt Kinematics Kit  | 786.75 €   | 1 | 786.75 €  | [Eduart Robotik](https://www.eduart-robotik.com/)
 Faulhaber DC motors with planetary gearboxes  | 209.20 €   | 6 | 1255.20 €   | [2224U018S R IEH2-512 22GPT 44:1](https://www.faulhaber.com/de/produkte/serie/22gpt/)
 Raspberry Pi 5 8Gb  | 86.50 €   | 1 | 86.50 €   | [berrybase](https://www.berrybase.de/raspberry-pi-5-8gb-ram) 
-Intel RealSense D435 | 343.92 € | 1 | 343.92 € | [Amazon](https://www.amazon.de/Intel-RealSense-82635AWGDVKPRQ-Erfassung-beweglicher/dp/B07BLS5477?th=1)
-Waveshare MLX90640 | 71.99 € | 1 | 71.99 € | [Amazon](https://www.amazon.de/Waveshare-MLX90640-Communicating-Interface-Raspberry/dp/B07ZKK8QWY)
+VL53L0X | 7.49 € | 1 | 7.49 € | [Amazon](https://www.amazon.de/AZDelivery-VL53L0X-Flight-Ranging-Sensor/dp/B086V37JJ7?th=1)
+USB camera module IMX179 | 49.90 € | 1 | 49.90 € | [berrybase](https://www.berrybase.de/usb-2.0-hd-kameramodul-8-megapixel-imx179-sensor-1450-mikrofon)
 USB camera module OV2710 | 33.40 € | 1 | 33.40 € | [berrybase](https://www.berrybase.de/usb-2.0-kameramodul-2-megapixel-ov2710-sensor-1450-low-light?number=USBCAM-OV2&utm_source=google&utm_medium=cpc&gad_source=1&gclid=CjwKCAjwyo60BhBiEiwAHmVLJcHQucbtdbESN0yuI6bVZ5HOoqdbWIbmEjVRBcczMSEdCzt6vbW_oBoCiiIQAvD_BwE)
 PCA9685 Servomotor Drive Module | 6.50 € | 1 | 6.50 € | [Amazon](https://www.amazon.de/PCA9685-16-Kanal-12-Bit-Arduino-Robort/dp/B07Y9PTY12/ref=sr_1_1_sspa?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1H58JK0GL9NFW&dib=eyJ2IjoiMSJ9.sjVEWI4eKRct-eZBQe_falPylAAwfhP8vZm8uHwHw66MRq0ATak9f7IIULp36zjukcF5EAij4hVMcSNmdBgMud2f-AMP_C3jbILbSyO9KD9OGyWViLzLGNoxXIqxymJ1gFsvUm8Q7Ir2M-0g2c2kmnue8tN2o81HSOSYR3C1--mLdxFhAHc_zcR0KkqPxyjhoQd1BjaoIHVv59fo3a8INueA9dn1atLidDkxX4F7HrQ.-r1tciRJ8uMP2lGuUtUHNLkgY6wIfp8SJxpd5GLO-9s&dib_tag=se&keywords=PCA9685&qid=1719951819&sprefix=pca9685%2Caps%2C81&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)
-Black Starter Kit Regular MakerBeam  | 117.95 € | 1 | 117.95 € | [Makerbeam](https://www.makerbeam.com/makerbeam-makerbeam-regular-starter-kit-black.html)
+Bambu PETG Filament 1 kg  | 16.99 € | 4 | 67.96 € | [Bambu](https://eu.store.bambulab.com/de/products/petg-hf?variant=49068714623324)
 Maschine screws (M2, M2.5 M3) | 24.65 € | 1 | 24.65 € | [Amazon](https://www.amazon.de/Edelstahl-Sechskopf-Knopf-Schrauben-Unterlegscheiben-Sortiment-Aufbewahrung/dp/B07FPGNTXD/ref=sr_1_1_sspa?crid=2UL3AQDCLIF90&dib=eyJ2IjoiMSJ9.pILkoNUYORKH02omgGo1XNmNFckv_8r9HRLXB9li4dhKD-Ew3TvRDzX5WsXYpMcyR8zW5dlMc61tFv4yNgacQs4yQz8S5GYLCmXaSG4gTVPYUQrHYS2nP6LvB7f1n4acfrp6UgmVXTm97_zJVL36W4Ti8y7QKyLGJkrfBnkcj7y6--g_K8i0BgHs6LCgmP6eKVjnnbwq97OfUoSA1sHhrcUDbwSiHQQu-_eFwE_Xz-vYNFDuwFN40lp9-WCoviQIXFpM4xNp6d1dUk7MaPbL1-ZpcDyUFfrZiVAXLR3V5OA.Dm0YttZ6EzuYx8afRyiYxNxK4RdZVS_piXpbV0i4MLU&dib_tag=se&keywords=m3%2Bschrauben%2Bset&qid=1720015943&sprefix=m3%2Bschr%2Caps%2C80&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)
 Heat-Set Inserts | 8.99 € | 1 | 8.99 € | [Amazon](https://www.amazon.de/ruthex-Gewindeeinsatz-St%C3%BCck-Gewindebuchsen-Kunststoffteile/dp/B08BCRZZS3/ref=sr_1_5?crid=17XN2W9D8KS40&dib=eyJ2IjoiMSJ9.chJHNCet5aQ0sdjbprRc9YiyWImaSKCMgxzpF0Odb6mG3Uw6O4oPoJGumEcnij26fxHUnqFu4xEbCiukhTJEgfRtwTroXTYtp6I2u7Oj8ezBf8J0Vm2ra-8HVxpufjoTbuTRTPW0PJ-YRjcHVb0n2xf97lAt-PJU9hZ8-PSX64yPoOslK6qB0rIqrohywO-fdkR2HRTEM7-HABXztPI6a5ZQvwsfHOoXDcItj80shxqz2-HefZcCygZ-Q3RW8Awk-ppkOqzjRlWHilI-Uu6TwTb-dIYF8T5-GOBviLdMch0.EocP6OkBp9Vki3ejz39Wx-2732BW1RPTk52ZiD_WocI&dib_tag=se&keywords=m3%2Bheat%2Binsert&qid=1719955437&s=industrial&sprefix=m3%2Bheat%2Cindustrial%2C75&sr=1-5&th=1)
-|  | |**TOTAL:** | 2833.81 € |
+|  | |**TOTAL:** | 2436.31 € |
 
-The total price of all components is very high, but most of the components are high-quality products that can usually be replaced very easily with comparable, significantly cheaper components. For example, simpler [Pololu motors](https://www.pololu.com/category/272/24v-37d-metal-gearmotors) can be used instead of Faulhaber motors. It should also be mentioned at this point that some of these components, like the Intel-Realsense D435, were already available from previous projects at our school and have now found a new use. We would also like to thank Faulhaber, EduArt Robotik and Siemens for making their components available to us free of charge.
+The total price of all components is very high, but most of the components are high-quality products that can usually be replaced very easily with comparable, significantly cheaper components. For example, simpler [Pololu motors](https://www.pololu.com/category/272/24v-37d-metal-gearmotors) can be used instead of Faulhaber motors. It should also be mentioned at this point that some of these components, were already available from previous projects at our school and have now found a new use. We would also like to thank Faulhaber, EduArt Robotik and Siemens for making their components available to us free of charge.
 
 ## Software Control
 For more details on software control, please refer to the software section.
