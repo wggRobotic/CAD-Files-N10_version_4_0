@@ -1,6 +1,6 @@
 # Robot components
 
-Here, you will find all the essential components of our N-10 robot available as .stp files, allowing anyone to build and customize the robot.
+Here, you will find all the essential components of our N10 robot available as .stp files, allowing anyone to build and customize the robot.
 
 Our robot is a rover equipped with a Rocker-Bogie suspension system, inspired by the Mars rovers and the open-source [Stair Climbing Rover](https://www.printables.com/model/194299-stair-climbing-rover) project by WildWilly. We have modified, enhanced, and completely redesigned various components to meet our specific requirements.
 
